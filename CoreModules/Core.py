@@ -7,6 +7,7 @@
 
 from SyntaxProcess import readSyntax, createHostConnList
 from DockerInterface import *  
+from RuleWritter import writeFilterRules
 
 def createNetwork(networkName):
      network = createDockerNetwork(networkName)
@@ -51,9 +52,9 @@ def createHostReverseDictionary(hostList):
         reverseDictionary[host.hostName] = host    
     return reverseDictionary
 
-def createRuleInput(hostList, hostConnList, network):
+def createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.txt"):
     hostDict = createHostReverseDictionary(hostList)
-    with open("IPconnections.txt", "w") as file:
+    with open(outputFile, "w") as file:
         file.write("Subnet:{}\n".format(getDockerNetworkSubnet(network)[0]) )        
         for host in hostList:
             for conn in hostConnList[host.hostName]:
@@ -87,7 +88,8 @@ if __name__ == "__main__":
     createHosts(hostList)
     attachToNetwork(hostList, network)
     printDockerContainerIpList()
-    createRuleInput(hostList, hostConnList,network)
+    createRuleInput(hostList, hostConnList, network, inputFile="IPconnections.txt")
+    writeFilterRules("IPconnections.txt")
     
     
     
