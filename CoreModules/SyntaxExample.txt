@@ -1,0 +1,24 @@
+HostName: MyInternet
+HostType: Internet
+HostVendor: Internet
+Ports: *
+
+HostName:MyWebServer
+HostType: WebServer
+HostVendor: Apache
+Ports: 80,8080,500, 5000   , 4000
+
+HostName:MyDatabase
+HostType: Database
+HostVendor: MySQL
+Ports: 3306
+
+
+------------------------- Comments
+Connections:
+Internet:80:MyWebServer
+MyWebServer:3306:MyDatabase
+------------------------- Comments
+
+
+

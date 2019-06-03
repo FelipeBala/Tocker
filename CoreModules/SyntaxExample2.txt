@@ -1,0 +1,40 @@
+HostName: MyInternet
+HostType: Internet
+HostVendor: Internet
+Ports: *
+
+HostName:Host1
+HostType: WebServer
+HostVendor: Apache
+Ports: 80
+
+HostName:Host2
+HostType: WebServer
+HostVendor: Apache
+Ports: 80
+
+HostName:Host3
+HostType: WebServer
+HostVendor: Apache
+Ports: 80
+
+HostName:Host4
+HostType: WebServer
+HostVendor: Apache
+Ports: 80
+
+HostName:Host5
+HostType: WebServer
+HostVendor: Apache
+Ports: 80
+
+
+------------------------- Comments
+Connections:
+MyInternet:80:Host1
+MyInternet:80:Host2
+Host1:888:Host3
+Host3:888:Host5
+Host2:888:Host4
+Host4:888:Host6
+------------------------- Comments

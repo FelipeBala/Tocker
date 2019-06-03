@@ -1,0 +1,27 @@
+HostName: MyInternet
+HostType: Internet
+HostVendor: Internet
+Ports: *
+
+HostName:W1
+HostType: WebServer
+HostImage: httpd
+HostVendor: Apache
+Ports: 80
+
+HostName:H1
+HostType: pingHost
+HostImage: ping
+
+
+HostName:H2
+HostType: pingHost
+HostImage: ping
+
+
+Connections:
+MyInternet:80:W1
+W1:*:H1
+W1:*:H2
+
+
