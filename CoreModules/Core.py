@@ -3,7 +3,9 @@
 """
 @author: Bala
 """
- 
+
+import subprocess 
+import os 
 
 from SyntaxProcess import readSyntax, createHostConnList
 from DockerInterface import *  
@@ -75,7 +77,8 @@ def createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.t
                 file.write("{}:{}:{}\n".format(firstHost, ports, secondtHost ))
             
     
-
+def runBashFile(filePath):
+    subprocess.call(os.getcwd()+"/"+filePath, shell=True)
 
 
 
@@ -94,6 +97,7 @@ if __name__ == "__main__":
     printDockerContainerIpList()
     createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.txt")
     writeFilterRules("IPconnections.txt")
+    runBashFile("createRulesInIptables.sh")
     
     
     
