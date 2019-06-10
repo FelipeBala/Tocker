@@ -7,7 +7,7 @@ HostName:W1
 HostType: WebServer
 HostImage: httpd
 HostVendor: Apache
-Ports: 80
+Ports: 80,8080
 
 HostName:H1
 HostType: pingHost
@@ -21,7 +21,7 @@ HostImage: ping
 
 Connections:
 MyInternet:80:W1
-W1:#:H1
-W1:*:H2
+H1:#:W1
+H1:*:H2
 
 

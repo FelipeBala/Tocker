@@ -86,6 +86,7 @@ def getDockerContainerNetworkAndIP(container):
 
 def printDockerContainerIpList():
     containerList = getDockerContainerList()
+    print("-----------------------------------------------")
     print("Listing container`s (network, IP)")
     print("-----------------------------------------------")
     for container in containerList:

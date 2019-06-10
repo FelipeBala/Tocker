@@ -3,11 +3,13 @@
 """
 @author: Bala
 """
- 
+
+import subprocess 
+import os 
 
 from SyntaxProcess import readSyntax, createHostConnList
 from DockerInterface import *  
-from RuleWritter import writeFilterRules
+from RuleWriter import writeFilterRules
 
 def createNetwork(networkName):
      network = createDockerNetwork(networkName)
@@ -62,16 +64,21 @@ def createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.t
                 secondtHost   = hostDict[conn['secondtHost']].IP
                 firstHost     = ("*", firstHost)[firstHost is not None]
                 secondtHost   = ("*", secondtHost)[secondtHost is not None]
-                port = conn['ports']
-                if port == "#":
+                ports = conn['ports']
+                if ports == "#":
                     if (hostDict[conn['secondtHost']] is not None) and secondtHost != "*":
-                        port = hostDict[conn['secondtHost']].ports
+                        ports = ','.join(hostDict[conn['secondtHost']].ports)
+                        if not ports:
+                            print("Invalid use of # operator - Host {} does not have any port defined".format(conn['secondtHost']))
+                            print("The Connection was ignored")
+                            continue
                     else:
                         port = "*"
-                file.write("{}:{}:{}\n".format(firstHost, conn['ports'], secondtHost ))
+                file.write("{}:{}:{}\n".format(firstHost, ports, secondtHost ))
             
     
-
+def runBashFile(filePath):
+    subprocess.call(os.getcwd()+"/"+filePath, shell=True)
 
 
 
@@ -88,8 +95,9 @@ if __name__ == "__main__":
     createHosts(hostList)
     attachToNetwork(hostList, network)
     printDockerContainerIpList()
-    createRuleInput(hostList, hostConnList, network, inputFile="IPconnections.txt")
+    createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.txt")
     writeFilterRules("IPconnections.txt")
+    runBashFile("createRulesInIptables.sh")
     
     
     
