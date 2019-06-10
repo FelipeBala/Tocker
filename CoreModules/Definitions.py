@@ -1,7 +1,8 @@
+#!/bin/python3 
 # -*- coding: utf-8 -*-
 """
 
-@author: Bala
+@author: Felipe Balabanian
 """
 
 class Host:

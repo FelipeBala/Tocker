@@ -44,6 +44,9 @@ def readSyntax(filePath):
                 if sline[0].casefold() == "hostvendor":
                     hostList[-1].hostVendor = sline[1].strip().casefold()
 
+                if sline[0].casefold() == "hostip":
+                    hostList[-1].IP = sline[1].strip().casefold()
+
                 if sline[0].casefold() == "keep":
                     hostList[-1].keep = True #TODO criar um analisador estático para diferenciar o True e False                  
                     
