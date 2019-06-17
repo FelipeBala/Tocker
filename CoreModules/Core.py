@@ -95,8 +95,8 @@ if __name__ == "__main__":
     createHosts(hostList)
     attachToNetwork(hostList, network)
     printDockerContainerIpList()
-    createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.txt")
-    writeFilterRules("IPconnections.txt")
+    createRuleInput(hostList, hostConnList, network, outputFile="ipConnections.toker")
+    writeFilterRules("ipConnections.toker")
     runBashFile("createRulesInIptables.sh")
     
     

@@ -69,7 +69,7 @@ def readSyntax(filePath):
 
 
 def internetHostNameList(hostList):
-    return [ a.hostname for a in hostList if a.hostType == "internet" ]
+    return [ a.hostName for a in hostList if a.hostType == "internet" ]
 
 def getHostNameList(hostList):
     return [ a.hostname for a in hostList ]
@@ -81,7 +81,26 @@ def createHostConnList(hostList, connectionList):
         host[hostl.hostName] = [ a for a in connectionList if (a['firstHost'] == hostl.hostName) ]
     #print([host[h.hostname]["conn"] for h in hostList])
     return host     
-    
+
+def dictConn(hostList, connectionList):
+    return createHostConnList(hostList, connectionList)
+
+def listConn(dic):
+    connList = []
+    for _,l in dic.items():
+        if l:
+            for ll in l:
+                if ll:
+                    connList.append(ll)
+    return connList
+
+def getMaxHostId(hostList):
+    idList = [i.id for i in hostList]
+    return max(idList)
+
+def getMaxConnId(connectionList):
+    idList = [i["id"] for i in connectionList]
+    return max(idList)    
 
 def minSubNetClassMaskIPv4(ipList):
     IPfield = []
