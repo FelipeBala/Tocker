@@ -94,7 +94,7 @@ if __name__ == "__main__":
     network = createNetwork("TCCnet")
     createHosts(hostList)
     attachToNetwork(hostList, network)
-    printDockerContainerIpList()
+    printDockerContainerIpList2()
     createRuleInput(hostList, hostConnList, network, outputFile="ipConnections.toker")
     writeFilterRules("ipConnections.toker")
     runBashFile("createRulesInIptables.sh")

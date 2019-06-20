@@ -91,8 +91,18 @@ def printDockerContainerIpList():
     print("-----------------------------------------------")
     for container in containerList:
         print("Container: "+getDockerContainerName(container))
-        [print(i) for i in getDockerContainerNetworkAndIP(container)]
+        [ print(i) for i in getDockerContainerNetworkAndIP(container) ]
         print("-----------------------------------------------")
+
+def printDockerContainerIpList2():
+    containerList = getDockerContainerList()
+    print("-----------------------------------------------")
+    print("Listing container`s (network, IP)")
+    print("-----------------------------------------------")
+    for container in containerList:
+        s = ",".join([str(i) for i in getDockerContainerNetworkAndIP(container)])
+        print(getDockerContainerName(container) + " " + str(s))
+
 
 def getDockerContainerNetworks(container):
     container.reload()
