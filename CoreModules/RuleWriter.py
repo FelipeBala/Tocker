@@ -17,6 +17,7 @@ def writeFilterRules(filePath):
             outfile.write("iptables -t filter -N SUBNETS \n")
             outfile.write("iptables -t filter -F RULES \n")
             outfile.write("iptables -t filter -F SUBNETS \n")
+            outfile.write("iptables -t filter -D FORWARD -j SUBNETS \n")
             outfile.write("iptables -t filter -I FORWARD 1 -j SUBNETS \n")
             
             for line in lines:
