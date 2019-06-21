@@ -54,27 +54,52 @@ def createHostReverseDictionary(hostList):
         reverseDictionary[host.hostName] = host    
     return reverseDictionary
 
+
+def defineHostIP(host):
+    if host == "*":
+        #TODO adicionar "*", "N" como hosts genericos
+        hostIP = "*"
+        return hostIP
+
+    if host.IP is None:
+        if host.hostType == "internet":
+            hostIP = "internet"
+            return hostIP
+        else:
+            raise Exception('host without IP must be a internet access point')
+    else:
+        hostIP   = host.IP
+        return hostIP   
+
+
+
 def createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.txt"):
     hostDict = createHostReverseDictionary(hostList)
     with open(outputFile, "w") as file:
         file.write("Subnet:{}\n".format(getDockerNetworkSubnet(network)[0]) )        
         for host in hostList:
             for conn in hostConnList[host.hostName]:
-                firstHost     = hostDict[conn['firstHost']].IP
-                secondtHost   = hostDict[conn['secondtHost']].IP
-                firstHost     = ("*", firstHost)[firstHost is not None]
-                secondtHost   = ("*", secondtHost)[secondtHost is not None]
+                firstHost     = hostDict[conn['firstHost']]
+                secondHost    = hostDict[conn['secondHost']]
+                try:
+                    firstHostIP   = defineHostIP(firstHost)
+                    secondHostIP  = defineHostIP(secondHost)
+                except:
+                    print("The Connection was ignored")
+                    continue
+                
+
                 ports = conn['ports']
                 if ports == "#":
-                    if (hostDict[conn['secondtHost']] is not None) and secondtHost != "*":
-                        ports = ','.join(hostDict[conn['secondtHost']].ports)
+                    if (secondHostIP != "*") and (secondHostIP != "internet"):
+                        ports = ','.join(secondHost.ports)
                         if not ports:
-                            print("Invalid use of # operator - Host {} does not have any port defined".format(conn['secondtHost']))
+                            print("Invalid use of # operator - Host {} does not have any port defined".format(secondHost))
                             print("The Connection was ignored")
                             continue
                     else:
-                        port = "*"
-                file.write("{}:{}:{}\n".format(firstHost, ports, secondtHost ))
+                        ports = "*"
+                file.write("{}:{}:{}\n".format(firstHostIP, ports, secondHostIP ))
             
     
 def runBashFile(filePath):

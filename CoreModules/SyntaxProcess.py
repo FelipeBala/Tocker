@@ -61,7 +61,7 @@ def readSyntax(filePath):
             else:
                 if len(sline) == 3 and sline[0] != '' and sline[0][0] != '-':
                     connId = connId+1
-                    connectionList.append({"id":connId, "firstHost":sline[0].strip(), "ports":sline[1].strip(), "secondtHost":sline[2].strip() })
+                    connectionList.append({"id":connId, "firstHost":sline[0].strip(), "ports":sline[1].strip(), "secondHost":sline[2].strip() })
         
         #print([i["secondtHost"] for i in connectionList])
         return hostList, connectionList

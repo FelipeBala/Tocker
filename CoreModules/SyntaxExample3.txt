@@ -5,7 +5,7 @@ Ports: *
 
 HostName:W1
 HostType: WebServer
-HostImage: httpd
+HostImage: apache
 HostVendor: Apache
 Ports: 80,8080
 

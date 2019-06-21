@@ -36,15 +36,15 @@ def SnortInsert(hostList, connectionList):
     for internet in internetList:
         for conn in connectionList:
             if conn["firstHost"] == internet:
-                t = conn["secondtHost"]
-                conn["secondtHost"] = pairSnortInternet[internet]
+                t = conn["secondHost"]
+                conn["secondHost"] = pairSnortInternet[internet]
                 connId = connId+1
-                connectionList.append({"id":connId, "firstHost":pairSnortInternet[internet], "ports":conn["ports"], "secondtHost":t })
-            if conn["secondtHost"] == internet:
+                connectionList.append({"id":connId, "firstHost":pairSnortInternet[internet], "ports":conn["ports"], "secondHost":t })
+            if conn["secondHost"] == internet:
                 t = conn["firstHost"]
                 conn["firstHost"] = pairSnortInternet[internet]
                 connId = connId+1
-                connectionList.append({"id":connId, "firstHost":t, "ports":conn["ports"], "secondtHost":pairSnortInternet[internet] })
+                connectionList.append({"id":connId, "firstHost":t, "ports":conn["ports"], "secondHost":pairSnortInternet[internet] })
         
         #print(connList)
     
