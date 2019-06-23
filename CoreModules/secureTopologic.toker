@@ -27,6 +27,6 @@ Ports:*
 
 Connections:
 MyInternet:80:W1
-MyInternet:80:H1
+MyInternet:*:H1
 H1:#:W1
 H1:*:H2

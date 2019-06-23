@@ -31,7 +31,7 @@ def insertAfter(type, image, hostList, connectionList):
     connId = getMaxConnId(connectionList)  
     connDict = dictConn(hostList, connectionList)
 
-    with open("SecuritySolutionsConfigRoute.toker", "a") as file:
+    with open("ConfigRoute.toker", "a") as file:
         for hostT in hostsThatHasThisTypeList:
             for conn in connectionList:
                 if conn["firstHost"] == hostT:

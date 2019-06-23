@@ -132,11 +132,14 @@ def createSecuritySolutionsRouteRules(hostList, hostConnList, network, inputFile
                 if firstHostIP=="*" or secondHostIP=="*":
                     continue                
 
-                Outputfile.write('iptables -t filter -A INTERNETRULES -d {} -j ACCEPT'.format(firstHostIP))
-                Outputfile.write('route add {} gw {} \n'.format(secondHostIP, firstHostIP))
+                Outputfile.write('iptables -t filter -I RULES 1 -s {} -d {} -j ACCEPT \n'.format("172.18.0.1", secondHostIP))
+                Outputfile.write('iptables -t filter -I RULES 1 -s {} -d {} -j ACCEPT \n'.format(secondHostIP, "172.18.0.1"))
+                #Outputfile.write('route add {} gw {} \n'.format(secondHostIP, firstHostIP))
+                Outputfile.write('docker exec --privileged {} sh -c "route add {} gw {}"\n'.format(firstHostName, "172.18.0.1", "172.18.0.1")) 
+                Outputfile.write('docker exec --privileged {} sh -c "route add {} gw {}"\n'.format(firstHostName, secondHostIP, secondHostIP)) 
                 Outputfile.write('docker exec --privileged {} sh -c "route del default"\n'.format(secondHostName))    
                 Outputfile.write('docker exec --privileged {} sh -c "route add default gw {}"\n'.format(secondHostName, firstHostIP))           
-
+                Outputfile.write('docker exec --privileged {} sh -c "route add {} gw {}"\n'.format(secondHostName, "172.18.0.1", firstHostIP)) 
 
 
 
