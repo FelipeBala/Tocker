@@ -19,7 +19,13 @@ def readSyntax(filePath):
         for line in lines:
             sline = line.strip().split(":")
             #print(sline)
+            if not sline or not sline[0]:
+                continue
+            if sline[0][0] == '-' or sline[0][0] == '':
+                continue
             if not flagConnections:
+
+
                 
                 if sline[0].casefold() == "hostname":
                     try:
@@ -70,6 +76,9 @@ def readSyntax(filePath):
 
 def internetHostNameList(hostList):
     return [ a.hostName for a in hostList if a.hostType == "internet" ]
+
+def typeHostNameList(type, hostList):
+    return [ a.hostName for a in hostList if a.hostType == type.casefold() ]
 
 def getHostNameList(hostList):
     return [ a.hostname for a in hostList ]

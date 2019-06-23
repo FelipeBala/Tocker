@@ -10,6 +10,8 @@ import os
 from SyntaxProcess import readSyntax, createHostConnList
 from DockerInterface import *  
 from RuleWriter import writeFilterRules
+from SyntaxInsertSecurity import readTransformationsFromFileAndExecute
+from StaticAnalysis import runBashCommand, getAllUsedDockerImages, runSnykOnImagesList 
 
 def createNetwork(networkName):
      network = createDockerNetwork(networkName)
@@ -76,7 +78,8 @@ def defineHostIP(host):
 def createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.txt"):
     hostDict = createHostReverseDictionary(hostList)
     with open(outputFile, "w") as file:
-        file.write("Subnet:{}\n".format(getDockerNetworkSubnet(network)[0]) )        
+        file.write("Subnet:{}\n".format(getDockerNetworkSubnet(network)[0]) )    
+        #print(hostConnList)    
         for host in hostList:
             for conn in hostConnList[host.hostName]:
                 firstHost     = hostDict[conn['firstHost']]
@@ -100,7 +103,44 @@ def createRuleInput(hostList, hostConnList, network, outputFile="IPconnections.t
                     else:
                         ports = "*"
                 file.write("{}:{}:{}\n".format(firstHostIP, ports, secondHostIP ))
-            
+
+
+
+
+
+
+def createSecuritySolutionsRouteRules(hostList, hostConnList, network, inputFile="ConfigRoute.toker", outputFile="createRoute.toker"):
+    hostDict = createHostReverseDictionary(hostList)
+    with open(inputFile, "r") as Inputfile: 
+        with open(outputFile, "w") as Outputfile:  
+            lines = Inputfile.readlines() 
+            for line in lines:
+                sline          = line.strip().split(":")
+                sline          = [s.strip() for s in sline]
+                firstHostName  = sline[0]
+                secondHostName = sline[1]
+                firstHost      = hostDict[firstHostName]
+                secondHost     = hostDict[secondHostName]
+                try:
+                    firstHostIP   = defineHostIP(firstHost)
+                    secondHostIP  = defineHostIP(secondHost)
+                except:
+                    print("The Connection was ignored")
+                    continue
+                if firstHostIP=="internet" or secondHostIP=="internet":
+                    continue
+                if firstHostIP=="*" or secondHostIP=="*":
+                    continue                
+
+                Outputfile.write('iptables -t filter -A INTERNETRULES -d {} -j ACCEPT'.format(firstHostIP))
+                Outputfile.write('route add {} gw {} \n'.format(secondHostIP, firstHostIP))
+                Outputfile.write('docker exec --privileged {} sh -c "route del default"\n'.format(secondHostName))    
+                Outputfile.write('docker exec --privileged {} sh -c "route add default gw {}"\n'.format(secondHostName, firstHostIP))           
+
+
+
+
+
     
 def runBashFile(filePath):
     subprocess.call(os.getcwd()+"/"+filePath, shell=True)
@@ -116,14 +156,27 @@ def runBashFile(filePath):
 if __name__ == "__main__":
     hostList, connectionList = readSyntax("SyntaxExample3.txt")
     hostConnList = createHostConnList(hostList, connectionList)
+    hostList, connectionList = readTransformationsFromFileAndExecute("TransformationsExample.txt",  "secureTopologic.toker", hostList, connectionList)
+    hostList, connectionList = readSyntax("secureTopologic.toker")
+
+    imageList = getAllUsedDockerImages(hostList)
+    runSnykOnImagesList(imageList)
+    
     network = createNetwork("TCCnet")
     createHosts(hostList)
     attachToNetwork(hostList, network)
     printDockerContainerIpList2()
+
+    hostConnList = createHostConnList(hostList, connectionList)
     createRuleInput(hostList, hostConnList, network, outputFile="ipConnections.toker")
+    createSecuritySolutionsRouteRules(hostList, hostConnList, network, inputFile="ConfigRoute.toker", outputFile="createRoute.sh")
+ 
     writeFilterRules("ipConnections.toker")
-    runBashFile("createRulesInIptables.sh")
-    
+    runBashCommand("chmod 777 createRulesInIptables.sh")
+    runBashFile("createRulesInIptables.sh")    
+
+    runBashCommand("chmod 777 createRoute.sh")
+    runBashFile("createRoute.sh")
     
     
     

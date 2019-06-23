@@ -1,0 +1,931 @@
+
+Testing apache...
+
+✗ Low severity vulnerability found in tar
+  Description: Privilege Escalation
+  Info: https://snyk.io/vuln/SNYK-LINUX-TAR-105079
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > tar@1.29b-1.1
+
+✗ Low severity vulnerability found in tar
+  Description: CVE-2018-20482
+  Info: https://snyk.io/vuln/SNYK-LINUX-TAR-220695
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > tar@1.29b-1.1
+
+✗ Low severity vulnerability found in tar
+  Description: CVE-2019-9923
+  Info: https://snyk.io/vuln/SNYK-LINUX-TAR-441202
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > tar@1.29b-1.1
+
+✗ Low severity vulnerability found in systemd/libsystemd0
+  Description: Insecure Privilege Usage
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-128614
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ Low severity vulnerability found in systemd/libsystemd0
+  Description: Access Restriction Bypass
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-139149
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ Low severity vulnerability found in systemd/libsystemd0
+  Description: CVE-2018-16888
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-240648
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ Low severity vulnerability found in systemd/libsystemd0
+  Description: CVE-2019-9619
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-442642
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ Low severity vulnerability found in systemd/libsystemd0
+  Description: CVE-2019-3843
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-445382
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ Low severity vulnerability found in systemd/libsystemd0
+  Description: CVE-2019-3844
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-445385
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-108650
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: NULL Pointer Dereference
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-123402
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: CVE-2018-20346
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-205443
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: CVE-2019-9937
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-441204
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: CVE-2019-9936
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-441211
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: CVE-2018-20506
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-442146
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: CVE-2018-20505
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-442149
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: CVE-2019-5827
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-449600
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ Low severity vulnerability found in shadow/passwd
+  Description: CVE-2013-4235
+  Info: https://snyk.io/vuln/SNYK-LINUX-SHADOW-106309
+  Introduced through: apr/libapr1@1.5.2-5, apt@1.4.9, shadow/login@1:4.4-4.1
+  From: apr/libapr1@1.5.2-5 > util-linux/libuuid1@2.29.2-1+deb9u1 > shadow/passwd@1:4.4-4.1
+  From: apt@1.4.9 > adduser@3.115 > shadow/passwd@1:4.4-4.1
+  From: shadow/login@1:4.4-4.1
+
+✗ Low severity vulnerability found in shadow/passwd
+  Description: Privilege Escalation
+  Info: https://snyk.io/vuln/SNYK-LINUX-SHADOW-107359
+  Introduced through: apr/libapr1@1.5.2-5, apt@1.4.9, shadow/login@1:4.4-4.1
+  From: apr/libapr1@1.5.2-5 > util-linux/libuuid1@2.29.2-1+deb9u1 > shadow/passwd@1:4.4-4.1
+  From: apt@1.4.9 > adduser@3.115 > shadow/passwd@1:4.4-4.1
+  From: shadow/login@1:4.4-4.1
+
+✗ Low severity vulnerability found in shadow/passwd
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-LINUX-SHADOW-116095
+  Introduced through: apr/libapr1@1.5.2-5, apt@1.4.9, shadow/login@1:4.4-4.1
+  From: apr/libapr1@1.5.2-5 > util-linux/libuuid1@2.29.2-1+deb9u1 > shadow/passwd@1:4.4-4.1
+  From: apt@1.4.9 > adduser@3.115 > shadow/passwd@1:4.4-4.1
+  From: shadow/login@1:4.4-4.1
+
+✗ Low severity vulnerability found in python2.7/libpython2.7-stdlib
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHON27-111177
+  Introduced through: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3, python2.7@2.7.13-2+deb9u3, nmap/ndiff@7.40-1, python2.7/python2.7-minimal@2.7.13-2+deb9u3, python2.7/libpython2.7-minimal@2.7.13-2+deb9u3
+  From: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  and 8 more...
+
+✗ Low severity vulnerability found in python2.7/libpython2.7-stdlib
+  Description: Heap Buffer Overflow
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHON27-128381
+  Introduced through: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3, python2.7@2.7.13-2+deb9u3, nmap/ndiff@7.40-1, python2.7/python2.7-minimal@2.7.13-2+deb9u3, python2.7/libpython2.7-minimal@2.7.13-2+deb9u3
+  From: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  and 8 more...
+
+✗ Low severity vulnerability found in python2.7/libpython2.7-stdlib
+  Description: CVE-2019-5010
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHON27-257729
+  Introduced through: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3, python2.7@2.7.13-2+deb9u3, nmap/ndiff@7.40-1, python2.7/python2.7-minimal@2.7.13-2+deb9u3, python2.7/libpython2.7-minimal@2.7.13-2+deb9u3
+  From: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  and 8 more...
+
+✗ Low severity vulnerability found in python2.7/libpython2.7-stdlib
+  Description: CVE-2019-9636
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHON27-440038
+  Introduced through: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3, python2.7@2.7.13-2+deb9u3, nmap/ndiff@7.40-1, python2.7/python2.7-minimal@2.7.13-2+deb9u3, python2.7/libpython2.7-minimal@2.7.13-2+deb9u3
+  From: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  and 8 more...
+
+✗ Low severity vulnerability found in python2.7/libpython2.7-stdlib
+  Description: CVE-2019-9948
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHON27-441355
+  Introduced through: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3, python2.7@2.7.13-2+deb9u3, nmap/ndiff@7.40-1, python2.7/python2.7-minimal@2.7.13-2+deb9u3, python2.7/libpython2.7-minimal@2.7.13-2+deb9u3
+  From: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  and 8 more...
+
+✗ Low severity vulnerability found in python2.7/libpython2.7-stdlib
+  Description: CVE-2019-9947
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHON27-441359
+  Introduced through: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3, python2.7@2.7.13-2+deb9u3, nmap/ndiff@7.40-1, python2.7/python2.7-minimal@2.7.13-2+deb9u3, python2.7/libpython2.7-minimal@2.7.13-2+deb9u3
+  From: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  and 8 more...
+
+✗ Low severity vulnerability found in python-defaults/libpython-stdlib
+  Description: Arbitrary File Overwrite
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHONDEFAULTS-131138
+  Introduced through: python-defaults/libpython-stdlib@2.7.13-2, nmap/ndiff@7.40-1, python-defaults/python-minimal@2.7.13-2, python-defaults/python@2.7.13-2
+  From: python-defaults/libpython-stdlib@2.7.13-2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2
+  From: python-defaults/python-minimal@2.7.13-2
+  and 3 more...
+
+✗ Low severity vulnerability found in perl/perl-base
+  Description: CVE-2011-4116
+  Info: https://snyk.io/vuln/SNYK-LINUX-PERL-119176
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > perl/perl-base@5.24.1-3+deb9u5
+
+✗ Low severity vulnerability found in pcre3/libpcre3
+  Description: Buffer Overflow
+  Info: https://snyk.io/vuln/SNYK-LINUX-PCRE3-115388
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > pcre3/libpcre3@2:8.39-3
+
+✗ Low severity vulnerability found in pcre3/libpcre3
+  Description: Regular Expression Denial of Service (ReDoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-PCRE3-123374
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > pcre3/libpcre3@2:8.39-3
+
+✗ Low severity vulnerability found in pcre3/libpcre3
+  Description: Buffer Overflow
+  Info: https://snyk.io/vuln/SNYK-LINUX-PCRE3-126449
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > pcre3/libpcre3@2:8.39-3
+
+✗ Low severity vulnerability found in pcre3/libpcre3
+  Description: CVE-2017-16231
+  Info: https://snyk.io/vuln/SNYK-LINUX-PCRE3-137957
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > pcre3/libpcre3@2:8.39-3
+
+✗ Low severity vulnerability found in openssl/libssl1.1
+  Description: Insecure Cryptography
+  Info: https://snyk.io/vuln/SNYK-LINUX-OPENSSL-106356
+  Introduced through: openssl/libssl1.1@1.1.0j-1~deb9u1, openssl@1.1.0j-1~deb9u1, nmap@7.40-1, apr-util/libaprutil1-dev@1.5.4-3, python2.7@2.7.13-2+deb9u3, ca-certificates@20161130+nmu1+deb9u1
+  From: openssl/libssl1.1@1.1.0j-1~deb9u1
+  From: openssl@1.1.0j-1~deb9u1 > openssl/libssl1.1@1.1.0j-1~deb9u1
+  From: nmap@7.40-1 > openssl/libssl1.1@1.1.0j-1~deb9u1
+  and 4 more...
+
+✗ Low severity vulnerability found in openssl/libssl1.1
+  Description: Insecure Signature Validation
+  Info: https://snyk.io/vuln/SNYK-LINUX-OPENSSL-132445
+  Introduced through: openssl/libssl1.1@1.1.0j-1~deb9u1, openssl@1.1.0j-1~deb9u1, nmap@7.40-1, apr-util/libaprutil1-dev@1.5.4-3, python2.7@2.7.13-2+deb9u3, ca-certificates@20161130+nmu1+deb9u1
+  From: openssl/libssl1.1@1.1.0j-1~deb9u1
+  From: openssl@1.1.0j-1~deb9u1 > openssl/libssl1.1@1.1.0j-1~deb9u1
+  From: nmap@7.40-1 > openssl/libssl1.1@1.1.0j-1~deb9u1
+  and 4 more...
+
+✗ Low severity vulnerability found in openssl/libssl1.1
+  Description: CVE-2019-1543
+  Info: https://snyk.io/vuln/SNYK-LINUX-OPENSSL-439848
+  Introduced through: openssl/libssl1.1@1.1.0j-1~deb9u1, openssl@1.1.0j-1~deb9u1, nmap@7.40-1, apr-util/libaprutil1-dev@1.5.4-3, python2.7@2.7.13-2+deb9u3, ca-certificates@20161130+nmu1+deb9u1
+  From: openssl/libssl1.1@1.1.0j-1~deb9u1
+  From: openssl@1.1.0j-1~deb9u1 > openssl/libssl1.1@1.1.0j-1~deb9u1
+  From: nmap@7.40-1 > openssl/libssl1.1@1.1.0j-1~deb9u1
+  and 4 more...
+
+✗ Low severity vulnerability found in openldap/libldap-2.4-2
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-OPENLDAP-106029
+  Introduced through: openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2, apr-util/libaprutil1-ldap@1.5.4-3, apr-util/libaprutil1-dev@1.5.4-3, curl@7.52.1-5+deb9u9
+  From: openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  From: apr-util/libaprutil1-ldap@1.5.4-3 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  From: apr-util/libaprutil1-dev@1.5.4-3 > openldap/libldap2-dev@2.4.44+dfsg-5+deb9u2 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  and 3 more...
+
+✗ Low severity vulnerability found in openldap/libldap-2.4-2
+  Description: Insecure Cipher
+  Info: https://snyk.io/vuln/SNYK-LINUX-OPENLDAP-113152
+  Introduced through: openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2, apr-util/libaprutil1-ldap@1.5.4-3, apr-util/libaprutil1-dev@1.5.4-3, curl@7.52.1-5+deb9u9
+  From: openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  From: apr-util/libaprutil1-ldap@1.5.4-3 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  From: apr-util/libaprutil1-dev@1.5.4-3 > openldap/libldap2-dev@2.4.44+dfsg-5+deb9u2 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  and 3 more...
+
+✗ Low severity vulnerability found in openldap/libldap-2.4-2
+  Description: Arbitrary Process Kill
+  Info: https://snyk.io/vuln/SNYK-LINUX-OPENLDAP-119313
+  Introduced through: openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2, apr-util/libaprutil1-ldap@1.5.4-3, apr-util/libaprutil1-dev@1.5.4-3, curl@7.52.1-5+deb9u9
+  From: openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  From: apr-util/libaprutil1-ldap@1.5.4-3 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  From: apr-util/libaprutil1-dev@1.5.4-3 > openldap/libldap2-dev@2.4.44+dfsg-5+deb9u2 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2
+  and 3 more...
+
+✗ Low severity vulnerability found in nmap
+  Description: Directory Traversal
+  Info: https://snyk.io/vuln/SNYK-LINUX-NMAP-123637
+  Introduced through: nmap@7.40-1, nmap/ndiff@7.40-1
+  From: nmap@7.40-1
+  From: nmap/ndiff@7.40-1
+
+✗ Low severity vulnerability found in nmap
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-NMAP-172001
+  Introduced through: nmap@7.40-1, nmap/ndiff@7.40-1
+  From: nmap@7.40-1
+  From: nmap/ndiff@7.40-1
+
+✗ Low severity vulnerability found in nettle/libnettle6
+  Description: CVE-2018-16869
+  Info: https://snyk.io/vuln/SNYK-LINUX-NETTLE-177804
+  Introduced through: nettle/libnettle6@3.3-1+b2, iputils/iputils-ping@3:20161105-1, wget@1.18-5+deb9u3, curl@7.52.1-5+deb9u9, nettle/libhogweed4@3.3-1+b2
+  From: nettle/libnettle6@3.3-1+b2
+  From: iputils/iputils-ping@3:20161105-1 > nettle/libnettle6@3.3-1+b2
+  From: wget@1.18-5+deb9u3 > nettle/libnettle6@3.3-1+b2
+  and 6 more...
+
+✗ Low severity vulnerability found in net-tools
+  Description: CVE-2002-1976
+  Info: https://snyk.io/vuln/SNYK-LINUX-NETTOOLS-130227
+  Introduced through: net-tools@1.60+git20161116.90da8a0-1
+  From: net-tools@1.60+git20161116.90da8a0-1
+
+✗ Low severity vulnerability found in ncurses/libtinfo5
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-NCURSES-135410
+  Introduced through: ncurses/libtinfo5@6.0+20161126-1+deb9u2, bash@4.4-5, ncurses/libncursesw5@6.0+20161126-1+deb9u2, ncurses/ncurses-bin@6.0+20161126-1+deb9u2, readline/libreadline7@7.0-3, e2fsprogs@1.43.4-2, python2.7@2.7.13-2+deb9u3, ncurses/ncurses-base@6.0+20161126-1+deb9u2
+  From: ncurses/libtinfo5@6.0+20161126-1+deb9u2
+  From: bash@4.4-5 > ncurses/libtinfo5@6.0+20161126-1+deb9u2
+  From: ncurses/libncursesw5@6.0+20161126-1+deb9u2 > ncurses/libtinfo5@6.0+20161126-1+deb9u2
+  and 9 more...
+
+✗ Low severity vulnerability found in lxml/python-lxml
+  Description: CVE-2018-19787
+  Info: https://snyk.io/vuln/SNYK-LINUX-LXML-178071
+  Introduced through: lxml/python-lxml@3.7.1-1, nmap/ndiff@7.40-1
+  From: lxml/python-lxml@3.7.1-1
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1
+
+✗ Low severity vulnerability found in libxslt/libxslt1.1
+  Description: Use of Insufficiently Random Values
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXSLT-107995
+  Introduced through: libxslt/libxslt1.1@1.1.29-2.1, nmap/ndiff@7.40-1
+  From: libxslt/libxslt1.1@1.1.29-2.1
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1
+
+✗ Low severity vulnerability found in libxml2
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXML2-100005
+  Introduced through: libxml2@2.9.4+dfsg1-2.2+deb9u2, nmap/ndiff@7.40-1
+  From: libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+
+✗ Low severity vulnerability found in libxml2
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXML2-109724
+  Introduced through: libxml2@2.9.4+dfsg1-2.2+deb9u2, nmap/ndiff@7.40-1
+  From: libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+
+✗ Low severity vulnerability found in libxml2
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXML2-123292
+  Introduced through: libxml2@2.9.4+dfsg1-2.2+deb9u2, nmap/ndiff@7.40-1
+  From: libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+
+✗ Low severity vulnerability found in libxml2
+  Description: CVE-2018-14404
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXML2-171790
+  Introduced through: libxml2@2.9.4+dfsg1-2.2+deb9u2, nmap/ndiff@7.40-1
+  From: libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+
+✗ Low severity vulnerability found in libxml2
+  Description: CVE-2018-14567
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXML2-171916
+  Introduced through: libxml2@2.9.4+dfsg1-2.2+deb9u2, nmap/ndiff@7.40-1
+  From: libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+
+✗ Low severity vulnerability found in libtasn1-6
+  Description: CVE-2018-1000654
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBTASN16-172697
+  Introduced through: libtasn1-6@4.10-1.1+deb9u1, curl@7.52.1-5+deb9u9
+  From: libtasn1-6@4.10-1.1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2 > gnutls28/libgnutls30@3.5.8-5+deb9u4 > libtasn1-6@4.10-1.1+deb9u1
+
+✗ Low severity vulnerability found in krb5/libkrb5support0
+  Description: Arbitrary File Overwrite
+  Info: https://snyk.io/vuln/SNYK-LINUX-KRB5-103423
+  Introduced through: curl@7.52.1-5+deb9u9, krb5/krb5-locales@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libk5crypto3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5-3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  and 7 more...
+
+✗ Low severity vulnerability found in krb5/libkrb5support0
+  Description: Arbitrary Code Execution
+  Info: https://snyk.io/vuln/SNYK-LINUX-KRB5-106341
+  Introduced through: curl@7.52.1-5+deb9u9, krb5/krb5-locales@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libk5crypto3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5-3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  and 7 more...
+
+✗ Low severity vulnerability found in krb5/libkrb5support0
+  Description: Integer Overflow
+  Info: https://snyk.io/vuln/SNYK-LINUX-KRB5-116700
+  Introduced through: curl@7.52.1-5+deb9u9, krb5/krb5-locales@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libk5crypto3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5-3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  and 7 more...
+
+✗ Low severity vulnerability found in krb5/libkrb5support0
+  Description: Insecure Memory Handling (Double Free)
+  Info: https://snyk.io/vuln/SNYK-LINUX-KRB5-118386
+  Introduced through: curl@7.52.1-5+deb9u9, krb5/krb5-locales@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libk5crypto3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5-3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  and 7 more...
+
+✗ Low severity vulnerability found in krb5/libkrb5support0
+  Description: CVE-2018-20217
+  Info: https://snyk.io/vuln/SNYK-LINUX-KRB5-221142
+  Introduced through: curl@7.52.1-5+deb9u9, krb5/krb5-locales@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libk5crypto3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5-3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  and 7 more...
+
+✗ Low severity vulnerability found in iptables/libip4tc0
+  Description: Improper Input Validation
+  Info: https://snyk.io/vuln/SNYK-LINUX-IPTABLES-105526
+  Introduced through: iptables-persistent@1.0.4+nmu2
+  From: iptables-persistent@1.0.4+nmu2 > iptables@1.6.0+snapshot20161117-6 > iptables/libip4tc0@1.6.0+snapshot20161117-6
+  From: iptables-persistent@1.0.4+nmu2 > iptables@1.6.0+snapshot20161117-6 > iptables/libiptc0@1.6.0+snapshot20161117-6 > iptables/libip4tc0@1.6.0+snapshot20161117-6
+  From: iptables-persistent@1.0.4+nmu2 > iptables@1.6.0+snapshot20161117-6 > iptables/libip6tc0@1.6.0+snapshot20161117-6
+  and 4 more...
+
+✗ Low severity vulnerability found in gnutls28/libgnutls30
+  Description: CVE-2018-16868
+  Info: https://snyk.io/vuln/SNYK-LINUX-GNUTLS28-178366
+  Introduced through: gnutls28/libgnutls30@3.5.8-5+deb9u4, wget@1.18-5+deb9u3, curl@7.52.1-5+deb9u9
+  From: gnutls28/libgnutls30@3.5.8-5+deb9u4
+  From: wget@1.18-5+deb9u3 > gnutls28/libgnutls30@3.5.8-5+deb9u4
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2 > gnutls28/libgnutls30@3.5.8-5+deb9u4
+  and 1 more...
+
+✗ Low severity vulnerability found in gnupg2/gpgv
+  Description: Incorrect Key Validation
+  Info: https://snyk.io/vuln/SNYK-LINUX-GNUPG2-133194
+  Introduced through: gnupg2/gpgv@2.1.18-8~deb9u4, debian-archive-keyring@2017.5, apt@1.4.9
+  From: gnupg2/gpgv@2.1.18-8~deb9u4
+  From: debian-archive-keyring@2017.5 > gnupg2/gpgv@2.1.18-8~deb9u4
+  From: apt@1.4.9 > gnupg2/gpgv@2.1.18-8~deb9u4
+
+✗ Low severity vulnerability found in gnupg2/gpgv
+  Description: CVE-2018-1000858
+  Info: https://snyk.io/vuln/SNYK-LINUX-GNUPG2-209376
+  Introduced through: gnupg2/gpgv@2.1.18-8~deb9u4, debian-archive-keyring@2017.5, apt@1.4.9
+  From: gnupg2/gpgv@2.1.18-8~deb9u4
+  From: debian-archive-keyring@2017.5 > gnupg2/gpgv@2.1.18-8~deb9u4
+  From: apt@1.4.9 > gnupg2/gpgv@2.1.18-8~deb9u4
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-107098
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-108050
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-121839
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-134363
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-145302
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: CVE-2019-6488
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-257862
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: CVE-2016-10739
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-257895
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: CVE-2019-7309
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-259447
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in glibc/libc6-dev
+  Description: CVE-2019-9192
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-438096
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ Low severity vulnerability found in file/libmagic-mgc
+  Description: CVE-2019-8907
+  Info: https://snyk.io/vuln/SNYK-LINUX-FILE-437529
+  Introduced through: file/libmagic-mgc@1:5.30-1+deb9u2, file@1:5.30-1+deb9u2, file/libmagic1@1:5.30-1+deb9u2
+  From: file/libmagic-mgc@1:5.30-1+deb9u2
+  From: file@1:5.30-1+deb9u2 > file/libmagic1@1:5.30-1+deb9u2 > file/libmagic-mgc@1:5.30-1+deb9u2
+  From: file/libmagic1@1:5.30-1+deb9u2
+  and 2 more...
+
+✗ Low severity vulnerability found in file/libmagic-mgc
+  Description: CVE-2019-8906
+  Info: https://snyk.io/vuln/SNYK-LINUX-FILE-437533
+  Introduced through: file/libmagic-mgc@1:5.30-1+deb9u2, file@1:5.30-1+deb9u2, file/libmagic1@1:5.30-1+deb9u2
+  From: file/libmagic-mgc@1:5.30-1+deb9u2
+  From: file@1:5.30-1+deb9u2 > file/libmagic1@1:5.30-1+deb9u2 > file/libmagic-mgc@1:5.30-1+deb9u2
+  From: file/libmagic1@1:5.30-1+deb9u2
+  and 2 more...
+
+✗ Low severity vulnerability found in file/libmagic-mgc
+  Description: CVE-2019-8904
+  Info: https://snyk.io/vuln/SNYK-LINUX-FILE-437535
+  Introduced through: file/libmagic-mgc@1:5.30-1+deb9u2, file@1:5.30-1+deb9u2, file/libmagic1@1:5.30-1+deb9u2
+  From: file/libmagic-mgc@1:5.30-1+deb9u2
+  From: file@1:5.30-1+deb9u2 > file/libmagic1@1:5.30-1+deb9u2 > file/libmagic-mgc@1:5.30-1+deb9u2
+  From: file/libmagic1@1:5.30-1+deb9u2
+  and 2 more...
+
+✗ Low severity vulnerability found in file/libmagic-mgc
+  Description: CVE-2019-8905
+  Info: https://snyk.io/vuln/SNYK-LINUX-FILE-437551
+  Introduced through: file/libmagic-mgc@1:5.30-1+deb9u2, file@1:5.30-1+deb9u2, file/libmagic1@1:5.30-1+deb9u2
+  From: file/libmagic-mgc@1:5.30-1+deb9u2
+  From: file@1:5.30-1+deb9u2 > file/libmagic1@1:5.30-1+deb9u2 > file/libmagic-mgc@1:5.30-1+deb9u2
+  From: file/libmagic1@1:5.30-1+deb9u2
+  and 2 more...
+
+✗ Low severity vulnerability found in expat/libexpat1
+  Description: XML External Entity Injection (XXE)
+  Info: https://snyk.io/vuln/SNYK-LINUX-EXPAT-107842
+  Introduced through: expat/libexpat1@2.2.0-2+deb9u1, apr-util/libaprutil1-dev@1.5.4-3, python2.7@2.7.13-2+deb9u3
+  From: expat/libexpat1@2.2.0-2+deb9u1
+  From: apr-util/libaprutil1-dev@1.5.4-3 > apr-util/libaprutil1@1.5.4-3 > expat/libexpat1@2.2.0-2+deb9u1
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > expat/libexpat1@2.2.0-2+deb9u1
+  and 2 more...
+
+✗ Low severity vulnerability found in curl/libcurl3
+  Description: CVE-2019-5436
+  Info: https://snyk.io/vuln/SNYK-LINUX-CURL-447362
+  Introduced through: curl@7.52.1-5+deb9u9
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9
+  From: curl@7.52.1-5+deb9u9
+
+✗ Low severity vulnerability found in coreutils
+  Description: Sandbox (chroot) Escape
+  Info: https://snyk.io/vuln/SNYK-LINUX-COREUTILS-104909
+  Introduced through: coreutils@8.26-3
+  From: coreutils@8.26-3
+
+✗ Low severity vulnerability found in coreutils
+  Description: Arbitrary File Priviledge Modification
+  Info: https://snyk.io/vuln/SNYK-LINUX-COREUTILS-114540
+  Introduced through: coreutils@8.26-3
+  From: coreutils@8.26-3
+
+✗ Low severity vulnerability found in apt/libapt-pkg5.0
+  Description: CVE-2011-3374
+  Info: https://snyk.io/vuln/SNYK-LINUX-APT-116518
+  Introduced through: apt/libapt-pkg5.0@1.4.9, apt@1.4.9
+  From: apt/libapt-pkg5.0@1.4.9
+  From: apt@1.4.9 > apt/libapt-pkg5.0@1.4.9
+  From: apt@1.4.9
+
+✗ Low severity vulnerability found in apr/libapr1
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-APR-112292
+  Introduced through: apr/libapr1@1.5.2-5, apr/libapr1-dev@1.5.2-5, apr-util/libaprutil1-dev@1.5.4-3
+  From: apr/libapr1@1.5.2-5
+  From: apr/libapr1-dev@1.5.2-5 > apr/libapr1@1.5.2-5
+  From: apr-util/libaprutil1-dev@1.5.4-3 > apr-util/libaprutil1@1.5.4-3 > apr/libapr1@1.5.2-5
+  and 2 more...
+
+✗ Low severity vulnerability found in apr-util/libaprutil1
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-APRUTIL-113272
+  Introduced through: apr-util/libaprutil1@1.5.4-3, apr-util/libaprutil1-ldap@1.5.4-3, apr-util/libaprutil1-dev@1.5.4-3
+  From: apr-util/libaprutil1@1.5.4-3
+  From: apr-util/libaprutil1-ldap@1.5.4-3 > apr-util/libaprutil1@1.5.4-3
+  From: apr-util/libaprutil1-dev@1.5.4-3 > apr-util/libaprutil1@1.5.4-3
+  and 2 more...
+
+✗ Medium severity vulnerability found in systemd/libsystemd0
+  Description: Symlink Attack
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-111917
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ Medium severity vulnerability found in systemd/libsystemd0
+  Description: CVE-2018-20839
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-446728
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ Medium severity vulnerability found in python2.7/libpython2.7-stdlib
+  Description: Arbitrary Argument Injection
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHON27-102497
+  Introduced through: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3, python2.7@2.7.13-2+deb9u3, nmap/ndiff@7.40-1, python2.7/python2.7-minimal@2.7.13-2+deb9u3, python2.7/libpython2.7-minimal@2.7.13-2+deb9u3
+  From: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  and 8 more...
+
+✗ Medium severity vulnerability found in python2.7/libpython2.7-stdlib
+  Description: CWE-93
+  Info: https://snyk.io/vuln/SNYK-LINUX-PYTHON27-440466
+  Introduced through: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3, python2.7@2.7.13-2+deb9u3, nmap/ndiff@7.40-1, python2.7/python2.7-minimal@2.7.13-2+deb9u3, python2.7/libpython2.7-minimal@2.7.13-2+deb9u3
+  From: python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > python-defaults/python@2.7.13-2 > python-defaults/libpython-stdlib@2.7.13-2 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3
+  and 8 more...
+
+✗ Medium severity vulnerability found in nghttp2/libnghttp2-14
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-NGHTTP2-107462
+  Introduced through: nghttp2/libnghttp2-14@1.18.1-1, curl@7.52.1-5+deb9u9
+  From: nghttp2/libnghttp2-14@1.18.1-1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > nghttp2/libnghttp2-14@1.18.1-1
+
+✗ Medium severity vulnerability found in ncurses/libtinfo5
+  Description: CWE-476
+  Info: https://snyk.io/vuln/SNYK-LINUX-NCURSES-443145
+  Introduced through: ncurses/libtinfo5@6.0+20161126-1+deb9u2, bash@4.4-5, ncurses/libncursesw5@6.0+20161126-1+deb9u2, ncurses/ncurses-bin@6.0+20161126-1+deb9u2, readline/libreadline7@7.0-3, e2fsprogs@1.43.4-2, python2.7@2.7.13-2+deb9u3, ncurses/ncurses-base@6.0+20161126-1+deb9u2
+  From: ncurses/libtinfo5@6.0+20161126-1+deb9u2
+  From: bash@4.4-5 > ncurses/libtinfo5@6.0+20161126-1+deb9u2
+  From: ncurses/libncursesw5@6.0+20161126-1+deb9u2 > ncurses/libtinfo5@6.0+20161126-1+deb9u2
+  and 9 more...
+
+✗ Medium severity vulnerability found in libxml2
+  Description: XML External Entity Injection (XXE)
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXML2-100879
+  Introduced through: libxml2@2.9.4+dfsg1-2.2+deb9u2, nmap/ndiff@7.40-1
+  From: libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+
+✗ Medium severity vulnerability found in libxml2
+  Description: Out-of-bounds Write
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXML2-111559
+  Introduced through: libxml2@2.9.4+dfsg1-2.2+deb9u2, nmap/ndiff@7.40-1
+  From: libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+
+✗ Medium severity vulnerability found in libxml2
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXML2-136041
+  Introduced through: libxml2@2.9.4+dfsg1-2.2+deb9u2, nmap/ndiff@7.40-1
+  From: libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1 > libxml2@2.9.4+dfsg1-2.2+deb9u2
+
+✗ Medium severity vulnerability found in libgcrypt20
+  Description: Information Exposure
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBGCRYPT20-116093
+  Introduced through: gnupg2/gpgv@2.1.18-8~deb9u4, util-linux/bsdutils@1:2.29.2-1+deb9u1, curl@7.52.1-5+deb9u9, nmap/ndiff@7.40-1
+  From: gnupg2/gpgv@2.1.18-8~deb9u4 > libgcrypt20@1.7.6-2+deb9u3
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11 > libgcrypt20@1.7.6-2+deb9u3
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > libssh2/libssh2-1@1.7.0-1+deb9u1 > libgcrypt20@1.7.6-2+deb9u3
+  and 1 more...
+
+✗ Medium severity vulnerability found in krb5/libkrb5support0
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-KRB5-125766
+  Introduced through: curl@7.52.1-5+deb9u9, krb5/krb5-locales@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libk5crypto3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5-3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  and 7 more...
+
+✗ Medium severity vulnerability found in krb5/libkrb5support0
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-KRB5-154997
+  Introduced through: curl@7.52.1-5+deb9u9, krb5/krb5-locales@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libk5crypto3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5-3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  and 7 more...
+
+✗ Medium severity vulnerability found in krb5/libkrb5support0
+  Description: Access Restriction Bypass
+  Info: https://snyk.io/vuln/SNYK-LINUX-KRB5-159695
+  Introduced through: curl@7.52.1-5+deb9u9, krb5/krb5-locales@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libk5crypto3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > krb5/libgssapi-krb5-2@1.15-1+deb9u1 > krb5/libkrb5-3@1.15-1+deb9u1 > krb5/libkrb5support0@1.15-1+deb9u1
+  and 7 more...
+
+✗ Medium severity vulnerability found in gnutls28/libgnutls30
+  Description: Man-in-the-Middle (MitM)
+  Info: https://snyk.io/vuln/SNYK-LINUX-GNUTLS28-145159
+  Introduced through: gnutls28/libgnutls30@3.5.8-5+deb9u4, wget@1.18-5+deb9u3, curl@7.52.1-5+deb9u9
+  From: gnutls28/libgnutls30@3.5.8-5+deb9u4
+  From: wget@1.18-5+deb9u3 > gnutls28/libgnutls30@3.5.8-5+deb9u4
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2 > gnutls28/libgnutls30@3.5.8-5+deb9u4
+  and 1 more...
+
+✗ Medium severity vulnerability found in gnutls28/libgnutls30
+  Description: CVE-2019-3836
+  Info: https://snyk.io/vuln/SNYK-LINUX-GNUTLS28-441635
+  Introduced through: gnutls28/libgnutls30@3.5.8-5+deb9u4, wget@1.18-5+deb9u3, curl@7.52.1-5+deb9u9
+  From: gnutls28/libgnutls30@3.5.8-5+deb9u4
+  From: wget@1.18-5+deb9u3 > gnutls28/libgnutls30@3.5.8-5+deb9u4
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2 > gnutls28/libgnutls30@3.5.8-5+deb9u4
+  and 1 more...
+
+✗ Medium severity vulnerability found in gnutls28/libgnutls30
+  Description: CVE-2019-3829
+  Info: https://snyk.io/vuln/SNYK-LINUX-GNUTLS28-441640
+  Introduced through: gnutls28/libgnutls30@3.5.8-5+deb9u4, wget@1.18-5+deb9u3, curl@7.52.1-5+deb9u9
+  From: gnutls28/libgnutls30@3.5.8-5+deb9u4
+  From: wget@1.18-5+deb9u3 > gnutls28/libgnutls30@3.5.8-5+deb9u4
+  From: curl@7.52.1-5+deb9u9 > curl/libcurl3@7.52.1-5+deb9u9 > openldap/libldap-2.4-2@2.4.44+dfsg-5+deb9u2 > gnutls28/libgnutls30@3.5.8-5+deb9u4
+  and 1 more...
+
+✗ Medium severity vulnerability found in glibc/libc6-dev
+  Description: DNS Spoofing Attacks
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-120740
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ High severity vulnerability found in util-linux/libuuid1
+  Description: Sandbox (util-linux) Escape
+  Info: https://snyk.io/vuln/SNYK-LINUX-UTILLINUX-129007
+  Introduced through: util-linux/libuuid1@2.29.2-1+deb9u1, util-linux/libfdisk1@2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, wget@1.18-5+deb9u3, apr/libapr1@1.5.2-5, apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, util-linux/mount@2.29.2-1+deb9u1, util-linux/libblkid1@2.29.2-1+deb9u1, util-linux/libmount1@2.29.2-1+deb9u1, util-linux/libsmartcols1@2.29.2-1+deb9u1, util-linux@2.29.2-1+deb9u1, sysvinit/sysvinit-utils@2.88dsf-59.9, util-linux/bsdutils@1:2.29.2-1+deb9u1
+  From: util-linux/libuuid1@2.29.2-1+deb9u1
+  From: util-linux/libfdisk1@2.29.2-1+deb9u1 > util-linux/libuuid1@2.29.2-1+deb9u1
+  From: e2fsprogs@1.43.4-2 > util-linux/libuuid1@2.29.2-1+deb9u1
+  and 26 more...
+
+✗ High severity vulnerability found in systemd/libsystemd0
+  Description: Insecure Symlink Handling
+  Info: https://snyk.io/vuln/SNYK-LINUX-SYSTEMD-103027
+  Introduced through: systemd/libsystemd0@232-25+deb9u11, util-linux/bsdutils@1:2.29.2-1+deb9u1, e2fsprogs@1.43.4-2, systemd/libudev1@232-25+deb9u11, util-linux/mount@2.29.2-1+deb9u1
+  From: systemd/libsystemd0@232-25+deb9u11
+  From: util-linux/bsdutils@1:2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  From: e2fsprogs@1.43.4-2 > util-linux@2.29.2-1+deb9u1 > systemd/libsystemd0@232-25+deb9u11
+  and 3 more...
+
+✗ High severity vulnerability found in sqlite3/libsqlite3-0
+  Description: CWE-125
+  Info: https://snyk.io/vuln/SNYK-LINUX-SQLITE3-448003
+  Introduced through: sqlite3/libsqlite3-0@3.16.2-5+deb9u1, python2.7@2.7.13-2+deb9u3
+  From: sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+  From: python2.7@2.7.13-2+deb9u3 > python2.7/libpython2.7-stdlib@2.7.13-2+deb9u3 > sqlite3/libsqlite3-0@3.16.2-5+deb9u1
+
+✗ High severity vulnerability found in shadow/passwd
+  Description: Internal Data Manipulation
+  Info: https://snyk.io/vuln/SNYK-LINUX-SHADOW-123859
+  Introduced through: apr/libapr1@1.5.2-5, apt@1.4.9, shadow/login@1:4.4-4.1
+  From: apr/libapr1@1.5.2-5 > util-linux/libuuid1@2.29.2-1+deb9u1 > shadow/passwd@1:4.4-4.1
+  From: apt@1.4.9 > adduser@3.115 > shadow/passwd@1:4.4-4.1
+  From: shadow/login@1:4.4-4.1
+
+✗ High severity vulnerability found in lua5.3/liblua5.3-0
+  Description: CWE-416
+  Info: https://snyk.io/vuln/SNYK-LINUX-LUA53-259266
+  Introduced through: nmap@7.40-1
+  From: nmap@7.40-1 > lua5.3/liblua5.3-0@5.3.3-1
+
+✗ High severity vulnerability found in libxslt/libxslt1.1
+  Description: CWE-284
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBXSLT-443162
+  Introduced through: libxslt/libxslt1.1@1.1.29-2.1, nmap/ndiff@7.40-1
+  From: libxslt/libxslt1.1@1.1.29-2.1
+  From: nmap/ndiff@7.40-1 > lxml/python-lxml@3.7.1-1 > libxslt/libxslt1.1@1.1.29-2.1
+
+✗ High severity vulnerability found in libidn/libidn11
+  Description: Denial of Service (DoS)
+  Info: https://snyk.io/vuln/SNYK-LINUX-LIBIDN-113412
+  Introduced through: libidn/libidn11@1.33-1, iputils/iputils-ping@3:20161105-1, wget@1.18-5+deb9u3, curl@7.52.1-5+deb9u9
+  From: libidn/libidn11@1.33-1
+  From: iputils/iputils-ping@3:20161105-1 > libidn/libidn11@1.33-1
+  From: wget@1.18-5+deb9u3 > libidn/libidn11@1.33-1
+  and 1 more...
+
+✗ High severity vulnerability found in glibc/libc6-dev
+  Description: Heap Corruption
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-103290
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ High severity vulnerability found in glibc/libc6-dev
+  Description: Heap Corruption
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-111940
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ High severity vulnerability found in glibc/libc6-dev
+  Description: Privilege Escalation
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-129450
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ High severity vulnerability found in glibc/libc6-dev
+  Description: CWE-125
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-438153
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ High severity vulnerability found in glibc/libc6-dev
+  Description: CWE-19
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-438155
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ High severity vulnerability found in glibc/libc6-dev
+  Description: CWE-399
+  Info: https://snyk.io/vuln/SNYK-LINUX-GLIBC-438162
+  Introduced through: apr-util/libaprutil1-dev@1.5.4-3, apr/libapr1-dev@1.5.2-5, glibc/libc-bin@2.24-11+deb9u4, meta-common-packages@meta
+  From: apr-util/libaprutil1-dev@1.5.4-3 > expat/libexpat1-dev@2.2.0-2+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > lksctp-tools/libsctp-dev@1.0.17+dfsg-1+b1 > glibc/libc6-dev@2.24-11+deb9u4
+  From: apr/libapr1-dev@1.5.2-5 > util-linux/uuid-dev@2.29.2-1+deb9u1 > glibc/libc6-dev@2.24-11+deb9u4
+  and 4 more...
+
+✗ High severity vulnerability found in gcc-6/libstdc++6
+  Description: CWE-119
+  Info: https://snyk.io/vuln/SNYK-LINUX-GCC6-447561
+  Introduced through: gcc-6/libstdc++6@6.3.0-18+deb9u1, apt/libapt-pkg5.0@1.4.9, apt@1.4.9, icu/libicu57@57.1-6+deb9u2, lua5.2/liblua5.2-0@5.2.4-1.1+b2, nmap@7.40-1, meta-common-packages@meta
+  From: gcc-6/libstdc++6@6.3.0-18+deb9u1
+  From: apt/libapt-pkg5.0@1.4.9 > gcc-6/libstdc++6@6.3.0-18+deb9u1
+  From: apt@1.4.9 > gcc-6/libstdc++6@6.3.0-18+deb9u1
+  and 10 more...
+
+
+
+
+Organisation:      felipebala
+Package manager:   deb
+Docker image:      apache
+
+Tested 175 dependencies for known vulnerabilities, found 111 vulnerabilities.
+
+Pro tip: use `--file` option to get base image remediation advice.
+Example: $ snyk test --docker apache --file=path/to/Dockerfile
+
+To remove this message in the future, please run `snyk config set disableSuggestions=true`
+

@@ -5,48 +5,50 @@
 @author: Felipe Balabanian
 """
 
-from SyntaxProcess import readSyntax, createHostConnList, internetHostNameList, getMaxHostId, getMaxConnId, listConn, dictConn
+from SyntaxProcess import readSyntax, createHostConnList, typeHostNameList, getMaxHostId, getMaxConnId, listConn, dictConn
 from Definitions import Host
 
 
-def SnortInsert(hostList, connectionList):
+def insertAfter(type, image, hostList, connectionList):
     
-    
-    internetList = internetHostNameList(hostList)
+    hostsThatHasThisTypeList = typeHostNameList(type, hostList)
     hostId = getMaxHostId(hostList)
     pairSnortInternet = dict()
     num = 0
-    for internetHost in internetList:
+    for hostT in hostsThatHasThisTypeList:
         num = num+1
-        name = "Snort"+str(num)
-        pairSnortInternet[internetHost] = name
+        name = image+str(num)
+        pairSnortInternet[hostT] = name
         hostId = hostId+1
         host = Host(hostId)
         host.hostName = name
-        host.hostImage = "Snort"
-        host.hostType = "Monitor"
-        host.hostVendor = "Snort"
+        host.hostImage = image
+        host.hostType = "SecuritySolution"
+        host.hostVendor = image
         host.ports = "*"
         hostList.append(host)
     
     connId = getMaxConnId(connectionList)  
     connDict = dictConn(hostList, connectionList)
 
-
-    for internet in internetList:
-        for conn in connectionList:
-            if conn["firstHost"] == internet:
-                t = conn["secondHost"]
-                conn["secondHost"] = pairSnortInternet[internet]
-                connId = connId+1
-                connectionList.append({"id":connId, "firstHost":pairSnortInternet[internet], "ports":conn["ports"], "secondHost":t })
-            if conn["secondHost"] == internet:
-                t = conn["firstHost"]
-                conn["firstHost"] = pairSnortInternet[internet]
-                connId = connId+1
-                connectionList.append({"id":connId, "firstHost":t, "ports":conn["ports"], "secondHost":pairSnortInternet[internet] })
-        
-        #print(connList)
+    with open("SecuritySolutionsConfigRoute.toker", "a") as file:
+        for hostT in hostsThatHasThisTypeList:
+            for conn in connectionList:
+                if conn["firstHost"] == hostT:
+                    t = conn["secondHost"]
+                    #conn["secondHost"] = pairSnortInternet[hostT]
+                    file.write(conn["firstHost"]+":"+pairSnortInternet[hostT]+"\n")
+                    connId = connId+1
+                    #connectionList.append({"id":connId, "firstHost":pairSnortInternet[hostT], "ports":conn["ports"], "secondHost":t })
+                    file.write(pairSnortInternet[hostT]+":"+t+"\n")
+                if conn["secondHost"] == hostT:
+                    t = conn["firstHost"]
+                    #conn["firstHost"] = pairSnortInternet[hostT]
+                    file.write(conn["secondHost"]+":"+pairSnortInternet[hostT]+"\n")
+                    connId = connId+1
+                    #connectionList.append({"id":connId, "firstHost":t, "ports":conn["ports"], "secondHost":pairSnortInternet[hostT] })
+                    file.write(t+":"+pairSnortInternet[hostT]+"\n")
+            #print(connList)
     
     
         
@@ -54,7 +56,9 @@ def SnortInsert(hostList, connectionList):
         
 
 
-
+def insertBefore(type, image, hostList, connectionList):
+    #TODO
+    return hostList, connectionList
 
 
 
@@ -83,19 +87,39 @@ def dataToText(filePath, hostList, connectionList, msg=None):
     string = string + "\nConnections:\n" 
     
     for conn in connectionList:   
-        string = string + "{}:{}:{}\n".format(conn["firstHost"],conn["ports"],conn["secondtHost"])
+        string = string + "{}:{}:{}\n".format(conn["firstHost"],conn["ports"],conn["secondHost"])
            
     with open(filePath, "w") as file: 
             file.write(string)      
 
 
 
+def readTransformationsFromFileAndExecute(inputFilePath, outputFilePath, hostList, connectionList):
+    f = open("ConfigRoute.toker", "w")
+    #f.write("Connections:\n")
+    f.close()
+    with open(inputFilePath, "r") as file:
+        lines = file.readlines() 
+        for line in lines:
+            sline = line.strip().split(":")
+            #sline = [s.strip().casefold() for s in sline]
+            #print(sline)
+            command = sline[0].casefold()
+            if not command:
+                continue
+            if command[0] == '-':
+                continue
+            if command == "insertafter":
+                hostList, connectionList = insertAfter(sline[1], sline[2], hostList, connectionList)
+            if command == "insertbefore":
+                hostList, connectionList = insertBefore(sline[1], sline[2], hostList, connectionList)
 
-
+    dataToText(outputFilePath, hostList, connectionList, "Auto Generated")
+    return hostList, connectionList
 
         
 if __name__ == "__main__":
     hostList, connectionList = readSyntax("SyntaxExample3.txt")
-    hostList, connectionList = SnortInsert(hostList, connectionList)
-    dataToText("secureTopologic.toker", hostList, connectionList, "Auto Generated")
+    readTransformationsFromFileAndExecute("TransformationsExample.txt", hostList, connectionList)
+    #dataToText("secureTopologic.toker", hostList, connectionList, "Auto Generated")
         

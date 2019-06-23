@@ -7,7 +7,7 @@ Ports:*
 
 HostName:W1
 HostType:webserver
-HostImage:httpd
+HostImage:apache
 HostVendor:apache
 Ports:80,8080
 
@@ -19,14 +19,14 @@ HostName:H2
 HostType:pinghost
 HostImage:ping
 
-HostName:Snort1
-HostType:Monitor
-HostImage:Snort
-HostVendor:Snort
+HostName:ping1
+HostType:SecuritySolution
+HostImage:ping
+HostVendor:ping
 Ports:*
 
 Connections:
-MyInternet:80:Snort1
+MyInternet:80:W1
+MyInternet:80:H1
 H1:#:W1
 H1:*:H2
-Snort1:80:W1

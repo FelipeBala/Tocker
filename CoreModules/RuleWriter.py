@@ -72,6 +72,10 @@ def writeFilterRules(filePath):
             outfile.write("iptables -t filter -A SUBNETS -j RETURN \n")
 
 
+
+
+
+
 if __name__ == "__main__":
     writeFilterRules("RuleExample.txt")
             
